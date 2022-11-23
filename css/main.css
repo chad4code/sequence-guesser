@@ -18,8 +18,41 @@ main {
 
 /* Text Styles */
 h2 {
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Status bar */
+
+.status {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 2em 0;
+}
+
+.status h3 {
+    margin-right: 2em;
+}
+
+.status-box {
+    font-size: 1.5em;
+}
+
+.init-button {
+    padding: 1em 1.5em;
+    background-color: mediumblue;
+    color: white;
+    border-radius: 30px;
+    opacity: 0.85;
 }
 
 /* Grid Square Container */
@@ -28,6 +61,10 @@ h2 {
     display: grid;
     grid-template: repeat(3, 100px) / repeat(2, 1fr);
     gap: 2em;
+    padding: 2em 3em;
+    background-color: lightgrey;
+    opacity: 0.9;
+    border-radius: 50px;
 }
 
 .square {

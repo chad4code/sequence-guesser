@@ -52,6 +52,7 @@ const sequenceIterator = () => {
             }
             seqArr.push(pushArr);
         }
+        incNum++;
     } else if (incNum > 20) {
         const numArr = [1, 2, 3, 4, 5, 6];
         const randInd = numArr[genRandNum(numArr.length)];
@@ -65,7 +66,10 @@ const sequenceIterator = () => {
             contArr.splice(testInd, 1);
         }
         seqArr.push(pushArr);
+        incNum++;
     }
 }
 // Set beginning play sequence
 sequenceIterator();
+// Needs to be integrated into future functions
+document.getElementsByClassName('status-box')[0].innerHTML = '<div class="init-button">Push me to start a round.</div>';
