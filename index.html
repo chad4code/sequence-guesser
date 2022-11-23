@@ -5,8 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sequence Guesser Game</title>
+        <script src="./js/engine.js" async></script>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+        <script src="./js/main.js" defer></script>
     </head>
     <body>
-        
+        <main>
+            <section id="play-game">
+                <h2>Replicate the Sequence</h2>
+                <article class="explainer">
+                    <p class="desc">Individual squares below will flash in a sequence. Each square has its individual sound that plays when the square is flashed. After the sequence is played, you need to select the squares in the same sequence.</p>
+                    <div class="status">
+                        <h3>Status:</h3>
+                        <div class="init-button">Push me to start a round.</div>
+                    </div>
+                </article>
+                <div id="seq-cont">
+                    <div class="square" id="squI"></div>
+                    <div class="square" id="squII"></div>
+                    <div class="square" id="squIII"></div>
+                    <div class="square" id="squIV"></div>
+                    <div class="square" id="squV"></div>
+                    <div class="square" id="squVI"></div>
+                </div>
+            </section>
+            <section id="results">
+                <h2>Your Results:</h2>
+            </section>
+        </main>
     </body>
 </html>

@@ -1,0 +1,83 @@
+/* basic tag settings */
+body {
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    padding: 4em 5em;
+    margin: 3em 5em;
+    background-color: lightblue;
+    border-radius: 50px;
+    color: rgb(64, 64, 64);
+    opacity: 0.9;
+}
+
+/* Text Styles */
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Grid Square Container */
+
+#seq-cont {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(2, 1fr);
+    gap: 2em;
+}
+
+.square {
+    max-width: 200px;
+    border-radius: 30px;
+    opacity: 0.5;
+}
+
+.square:hover {
+    opacity: 0.7;
+}
+
+.square:active {
+    opacity: 1;
+}
+
+#squI {
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-color: red;
+}
+
+#squII {
+    grid-area: 1 / 2 / span 1 / span 1;
+    background-color: yellow;
+}
+
+#squIII {
+    grid-area: 2 / 1 / span 1 / span 1;
+    background-color: orange;
+}
+
+#squIV {
+    grid-area: 2 / 2 / span 1 / span 1;
+    background-color: purple;
+}
+
+#squV {
+    grid-area: 3 / 1 / span 1 / span 1;
+    background-color: blue;
+}
+
+#squVI {
+    grid-area: 3 / 2 / span 1 / span 1;
+    background-color: green;
+}
+
+
+
+/* Results */
+
+#results {
+    display: none;
+}
